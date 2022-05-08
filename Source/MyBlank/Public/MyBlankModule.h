@@ -22,7 +22,7 @@ public:
 	 */
 	static FORCEINLINE IMyBlankModule& Get()
 	{
-		return FModuleManager::LoadModuleChecked< IMyBlankModule >( "MyBlankModule" );
+		return FModuleManager::LoadModuleChecked< IMyBlankModule >( "MyBlank" );
 	}
 
 	/**
@@ -32,7 +32,7 @@ public:
 	 */
 	static FORCEINLINE bool IsAvailable()
 	{
-		return FModuleManager::Get().IsModuleLoaded( "MyBlankModule" );
+		return FModuleManager::Get().IsModuleLoaded( "MyBlank" );
 	}
 	
 };

@@ -14,6 +14,20 @@ namespace UnrealBuildTool.Rules
 				new[]
 				{
 					"Core",
+					/*"CoreUObject",
+					"Engine",*/
+					
+					/*"Slate",
+					"SlateCore",
+					"UnrealEd",
+					"PropertyEditor",
+					"EditorStyle",
+					"InputCore",*/
+					
+					/*"UMG",*/
+					
+					/*"Common",*/
+					
 					// ... add private dependencies that you statically link with here ...
 				}
 			);

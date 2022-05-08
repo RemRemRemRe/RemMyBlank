@@ -9,7 +9,7 @@ class FMyBlankModule : public IMyBlankModule
 	virtual void ShutdownModule() override;
 };
 
-IMPLEMENT_MODULE(FMyBlankModule, MyBlankModule)
+IMPLEMENT_MODULE(FMyBlankModule, MyBlank)
 
 void FMyBlankModule::StartupModule()
 {
