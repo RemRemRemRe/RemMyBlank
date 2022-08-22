@@ -20,7 +20,7 @@ public:
 	 *
 	 * @return Returns singleton instance, loading the module on demand if needed
 	 */
-	static FORCEINLINE IMyBlankModule& Get()
+	static IMyBlankModule& Get()
 	{
 		return FModuleManager::LoadModuleChecked< IMyBlankModule >( "MyBlank" );
 	}
@@ -30,7 +30,7 @@ public:
 	 *
 	 * @return True if the module is loaded and ready to use
 	 */
-	static FORCEINLINE bool IsAvailable()
+	static bool IsAvailable()
 	{
 		return FModuleManager::Get().IsModuleLoaded( "MyBlank" );
 	}
