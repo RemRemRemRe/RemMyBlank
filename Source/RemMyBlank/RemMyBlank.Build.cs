@@ -3,9 +3,9 @@
 
 namespace UnrealBuildTool.Rules
 {
-	public class MyBlank : ModuleRules
+	public class RemMyBlank : ModuleRules
 	{
-		public MyBlank(ReadOnlyTargetRules target) : base(target)
+		public RemMyBlank(ReadOnlyTargetRules target) : base(target)
 		{
 			PCHUsage					= PCHUsageMode.UseExplicitOrSharedPCHs;
 			bLegacyPublicIncludePaths	= false;
@@ -28,7 +28,7 @@ namespace UnrealBuildTool.Rules
 					
 					/*"UMG",*/
 					
-					/*"Common",*/
+					/*"RemCommon",*/
 					
 					// ... add private dependencies that you statically link with here ...
 				}

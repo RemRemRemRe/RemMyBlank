@@ -8,7 +8,7 @@
 /**
  * The public interface to this module
  */
-class IMyBlankModule : public IModuleInterface
+class IRemMyBlankModule : public IModuleInterface
 {
 
 public:
@@ -19,9 +19,9 @@ public:
 	 *
 	 * @return Returns singleton instance, loading the module on demand if needed
 	 */
-	static IMyBlankModule& Get()
+	static IRemMyBlankModule& Get()
 	{
-		return FModuleManager::LoadModuleChecked< IMyBlankModule >( "MyBlank" );
+		return FModuleManager::LoadModuleChecked< IRemMyBlankModule >( "RemMyBlank" );
 	}
 
 	/**
@@ -31,7 +31,7 @@ public:
 	 */
 	static bool IsAvailable()
 	{
-		return FModuleManager::Get().IsModuleLoaded( "MyBlank" );
+		return FModuleManager::Get().IsModuleLoaded( "RemMyBlank" );
 	}
 	
 };

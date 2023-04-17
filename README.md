@@ -2,11 +2,11 @@
 
 When I want to create a new module,
 
-I copy paste whole `MyBlank` module folder,
+I copy paste whole `RemMyBlank` module folder,
 
 open that folder in [vscode](https://code.visualstudio.com/),
 
-replace all `MyBlank` string to `NewModuleName`,
+replace all `RemMyBlank` string to `NewModuleName`,
 
 also rename the folder,
 

@@ -2,7 +2,7 @@
 	"FileVersion": 3,
 	"Version": 1,
 	"VersionName": "1.0",
-	"FriendlyName": "MyBlank",
+	"FriendlyName": "RemMyBlank",
 	"Description": "",
 	"Category": "Editor",
 	"CreatedBy": "RemRemRemRe",
@@ -18,7 +18,7 @@
 	"BuiltInInitialFeatureState": "Active",
 	"Modules": [
 		{
-			"Name": "MyBlank",
+			"Name": "RemMyBlank",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
 		}
