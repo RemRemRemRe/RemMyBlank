@@ -1,6 +1,17 @@
 // Copyright RemRemRemRe, All Rights Reserved.
 
 #include "RemMyBlankModule.h"
+#include "Modules/ModuleManager.h"
+
+bool IRemMyBlankModule::IsAvailable()
+{
+	return FModuleManager::Get().IsModuleLoaded( "RemMyBlank" );
+}
+
+IRemMyBlankModule& IRemMyBlankModule::Get()
+{
+	return FModuleManager::LoadModuleChecked< IRemMyBlankModule >( "RemMyBlank" );
+}
 
 class FRemMyBlankModule : public IRemMyBlankModule
 {
