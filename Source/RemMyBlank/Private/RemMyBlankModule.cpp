@@ -3,15 +3,16 @@
 #include "RemMyBlankModule.h"
 #include "Modules/ModuleManager.h"
 
+IRemMyBlankModule& IRemMyBlankModule::Get()
+{
+	return FModuleManager::LoadModuleChecked< IRemMyBlankModule >( "RemMyBlank" );
+}
+
 bool IRemMyBlankModule::IsAvailable()
 {
 	return FModuleManager::Get().IsModuleLoaded( "RemMyBlank" );
 }
 
-IRemMyBlankModule& IRemMyBlankModule::Get()
-{
-	return FModuleManager::LoadModuleChecked< IRemMyBlankModule >( "RemMyBlank" );
-}
 
 class FRemMyBlankModule : public IRemMyBlankModule
 {
