@@ -1,6 +1,5 @@
 // Copyright RemRemRemRe, All Rights Reserved.
 
-
 namespace UnrealBuildTool.Rules
 {
 	public class RemMyBlank : ModuleRules
@@ -20,21 +19,10 @@ namespace UnrealBuildTool.Rules
 				new[]
 				{
 					"Core",
-					/*"CoreUObject",
-					"Engine",*/
-					
-					/*"Slate",
-					"SlateCore",
-					"UnrealEd",
-					"PropertyEditor",
-					"EditorStyle",
-					"InputCore",*/
-					
-					/*"UMG",*/
+					"CoreUObject",
+					"Engine",
 					
 					/*"RemCommon",*/
-					
-					// ... add private dependencies that you statically link with here ...
 				}
 			);
 		}
