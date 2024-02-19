@@ -22,7 +22,9 @@ namespace UnrealBuildTool.Rules
 					"CoreUObject",
 					"Engine",
 					
-					/*"RemCommon",*/
+					"DeveloperSettings",
+					
+					"RemCommon",
 				}
 			);
 		}
