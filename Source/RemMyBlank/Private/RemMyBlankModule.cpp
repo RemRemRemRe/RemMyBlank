@@ -14,7 +14,7 @@ bool IRemMyBlankModule::IsAvailable()
 }
 
 
-class FRemMyBlankModule : public IRemMyBlankModule
+class FRemMyBlankModule final : public IRemMyBlankModule
 {
 	/** IModuleInterface implementation */
 	virtual void StartupModule() override;
