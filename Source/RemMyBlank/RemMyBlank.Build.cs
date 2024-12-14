@@ -1,32 +1,31 @@
-// Copyright RemRemRemRe, All Rights Reserved.
+// Copyright RemRemRemRe. All Rights Reserved.
 
-namespace UnrealBuildTool.Rules
+using UnrealBuildTool;
+
+public class RemMyBlank : ModuleRules
 {
-	public class RemMyBlank : ModuleRules
+	public RemMyBlank(ReadOnlyTargetRules target) : base(target)
 	{
-		public RemMyBlank(ReadOnlyTargetRules target) : base(target)
-		{
-			ShadowVariableWarningLevel = WarningLevel.Error;
-			IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
-			DefaultBuildSettings = BuildSettingsVersion.Latest;
-			CppStandard = CppStandardVersion.EngineDefault;
-			UnsafeTypeCastWarningLevel = WarningLevel.Warning;
-
-			bEnableNonInlinedGenCppWarnings = true;
-			bUseUnity = false;
-
-			PrivateDependencyModuleNames.AddRange(
-				new[]
-				{
-					"Core",
-					"CoreUObject",
-					"Engine",
-					
-					"DeveloperSettings",
-					
-					"RemCommon",
-				}
-			);
-		}
+		ShadowVariableWarningLevel = WarningLevel.Error;
+		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
+		DefaultBuildSettings = BuildSettingsVersion.Latest;
+		CppStandard = CppStandardVersion.EngineDefault;
+		UnsafeTypeCastWarningLevel = WarningLevel.Warning;
+		
+		bEnableNonInlinedGenCppWarnings = true;
+		bUseUnity = false;
+		
+		PrivateDependencyModuleNames.AddRange(
+			new[]
+			{
+				"Core",
+				"CoreUObject",
+				"Engine",
+				
+				"DeveloperSettings",
+				
+				"RemCommon",
+			}
+		);
 	}
 }
