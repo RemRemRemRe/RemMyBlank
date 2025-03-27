@@ -16,8 +16,7 @@ public class RemMyBlank : ModuleRules
 		bUseUnity = false;
 		
 		PrivateDependencyModuleNames.AddRange(
-			new[]
-			{
+			[
 				"Core",
 				"CoreUObject",
 				"Engine",
@@ -25,7 +24,7 @@ public class RemMyBlank : ModuleRules
 				"DeveloperSettings",
 				
 				"RemCommon",
-			}
+			]
 		);
 	}
 }
