@@ -5,8 +5,10 @@
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "RemMyBlankStatics.generated.h"
 
+#define REM_API REMMYBLANK_API
+
 UCLASS()
-class REMMYBLANK_API URemMyBlankStatics : public UBlueprintFunctionLibrary
+class REM_API URemMyBlankStatics : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 
@@ -17,3 +19,5 @@ namespace Rem::MyBlank
 {
 
 }
+
+#undef REM_API

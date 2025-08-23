@@ -5,8 +5,12 @@
 #include "RemMetaTags.h"
 #include "RemMyBlankTags.generated.h"
 
+#define REM_API REMMYBLANK_API
+
 UCLASS(Config = RemMyBlankTags)
-class REMMYBLANK_API URemMyBlankTags : public URemMetaTags
+class REM_API URemMyBlankTags : public URemMetaTags
 {
 	GENERATED_BODY()
 };
+
+#undef REM_API

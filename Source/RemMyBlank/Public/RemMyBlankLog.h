@@ -4,4 +4,8 @@
 
 #include "Logging/LogMacros.h"
 
-REMMYBLANK_API DECLARE_LOG_CATEGORY_EXTERN(LogRemMyBlank, Log, All);
+#define REM_API REMMYBLANK_API
+
+REM_API DECLARE_LOG_CATEGORY_EXTERN(LogRemMyBlank, Log, All);
+
+#undef REM_API
