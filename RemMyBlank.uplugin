@@ -24,9 +24,9 @@
 		}
 	],
 	"Plugins": [
-	{
-		"Name": "RemCommon",
-		"Enabled": true
-	}
-]
+		{
+			"Name": "RemCommon",
+			"Enabled": true
+		}
+	]
 }
