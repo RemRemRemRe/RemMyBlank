@@ -10,7 +10,7 @@
 UCLASS(Config = RemMyBlankTags)
 class REM_API URemMyBlankTags : public URemMetaTags
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 };
 
 #undef REM_API
