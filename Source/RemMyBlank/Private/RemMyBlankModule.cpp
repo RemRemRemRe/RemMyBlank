@@ -16,6 +16,10 @@ bool IRemMyBlankModule::IsAvailable()
 
 class FRemMyBlankModule final : public IRemMyBlankModule
 {
+    using ThisClass = FRemMyBlankModule;
+    using Super     = IRemMyBlankModule;
+
+public:
     /** IModuleInterface implementation */
     virtual void StartupModule() override;
     virtual void ShutdownModule() override;
