@@ -30,12 +30,12 @@ IMPLEMENT_MODULE(FRemMyBlankModule, RemMyBlank)
 void FRemMyBlankModule::StartupModule()
 {
     // This code will execute after your module is loaded into memory (but after global variables are initialized, of course.)
-    IRemMyBlankModule::StartupModule();
+    Super::StartupModule();
 }
 
 void FRemMyBlankModule::ShutdownModule()
 {
     // This function may be called during shutdown to clean up your module.  For modules that support dynamic reloading,
     // we call this function before unloading the module.
-    IRemMyBlankModule::ShutdownModule();
+    Super::ShutdownModule();
 }
