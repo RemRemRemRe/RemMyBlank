@@ -14,10 +14,11 @@ bool IRemMyBlankModule::IsAvailable()
 }
 
 
+namespace
+{
 class FRemMyBlankModule final : public IRemMyBlankModule
 {
-    using ThisClass = FRemMyBlankModule;
-    using Super     = IRemMyBlankModule;
+    using Super = IRemMyBlankModule;
 
 public:
     /** IModuleInterface implementation */
@@ -38,4 +39,5 @@ void FRemMyBlankModule::ShutdownModule()
     // This function may be called during shutdown to clean up your module.  For modules that support dynamic reloading,
     // we call this function before unloading the module.
     Super::ShutdownModule();
+}
 }
